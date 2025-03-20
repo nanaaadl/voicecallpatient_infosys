@@ -1,6 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ant-layout-header {
+  display: none !important;
+}
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
