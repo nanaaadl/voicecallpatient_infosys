@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Voice-Based Patient Call System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project aims to develop a **voice-based patient call system** that allows patients to communicate their needs to nurses in a natural and convenient manner. The system leverages **Azure OpenAI** and **Autonomous AI Agents** to process, analyze, and prioritize patient requests.
+
+### Key Features
+- **Autonomous AI Agents**: AI-powered agents process and act upon patient requests based on predefined rules and priorities.
+- **Speech Services Integration**: Converts speech to text and vice versa for seamless communication.
+- **NLP-Powered Request Analysis**: Uses **Azure OpenAI** for analyzing and prioritizing patient requests.
+- **Voice-Driven Communication System**: A user-friendly voice assistant for patients.
+- **Nurse Mobile Application**: Displays real-time patient requests with room numbers and priority levels.
+- **Improved Patient Care**: Ensures faster response times for critical requests.
+
+---
+
+## Getting Started
+
+This project consists of multiple components:
+- **Admin Frontend** (`admin-frontend`)
+- **Admin Backend** (`npm-backend`)
+- **Voice Care Connect Backend** (`voice-care-connect-backend`)
+- **Voice Care Connect Frontend** (`voice-care-connect-frontend`)
+
+### Prerequisites
+Ensure you have the following installed:
+- **Node.js** (Latest LTS version recommended)
+- **npm** (Comes with Node.js)
+- **npx** (For running Expo CLI)
+
+---
+
+## Installation & Setup
+
+### 1. **Admin Frontend**
+```sh
+cd admin-frontend
+npm install
+npm start
+```
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### 2. **Admin Backend**
+```sh
+cd npm-backend
+npm install
+npm start
+```
+Runs the backend server.
+
+### 3. **Voice Care Connect Backend**
+```sh
+cd voice-care-connect-backend
+npm install
+npm start
+```
+Starts the backend server for voice care system.
+
+### 4. **Voice Care Connect Frontend**
+```sh
+cd voice-care-connect-frontend
+npm install
+npx expo start
+```
+Runs the frontend for the voice care system using Expo.
+
+---
 
 ## Available Scripts
 
-In the project directory, you can run:
+### **Frontend (React & React Native)**
+- `npm start` - Starts the development server.
+- `npm run build` - Builds the project for production.
+- `npx expo start` - Runs the React Native app in Expo.
 
-### `npm start`
+### **Backend (Node.js & Express)**
+- `npm start` - Starts the backend server.
+- `npm test` - Runs tests (if implemented).
+- `npm run build` - Builds the backend for production.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
+- For **React Frontend**, build and deploy using:
+  ```sh
+  npm run build
+  ```
+- For **Backend**, deploy to **Heroku, AWS, or Azure** as needed.
+- For **React Native Frontend**, use **Expo Publish**:
+  ```sh
+  expo publish
+  ```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
 ## Learn More
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Expo Documentation](https://docs.expo.dev/)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Troubleshooting
+### `npm run build` Fails to Minify
+If the production build fails, refer to the [troubleshooting guide](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
+Feel free to fork this project, submit issues, or create pull requests to enhance the system!
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the **MIT License**.
